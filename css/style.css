@@ -116,6 +116,71 @@ header img {
     transform-origin: bottom left;
 }
 
+/****** Recherche d'hébergement ********/
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    width: fit-content;
+    background-color: white;
+}
+.search-container .location-icon {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 100%;
+    
+}
+
+.search-container i {
+    font-size: 1.2em
+}
+.fa-location-dot {
+    color: black;
+}
+
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+
+}
+
+.search-container input[type="text"]::placeholder {
+    color: black;
+    opacity: 1; 
+}
+
+.search-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px ;
+    cursor: pointer;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
