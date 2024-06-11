@@ -286,10 +286,16 @@ header p {
 }
 
 .info-icon {
-    color: #007bff;
-    font-size: 1.5em;
-    margin-right: 10px; 
-}
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; /* Ajuster la taille selon les besoins */
+    height: 20px;
+    border: 2px solid #d9d9d9; /* Bordure grise */
+    border-radius: 50%; /* Rend la bordure circulaire */
+    margin-right: 10px;
+    font-size: 10px;
+        }
 
 .info-text {
     font-size: 1em;
@@ -308,9 +314,77 @@ header p {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.hebergements-container {
     width: 100%;
 }
+
+.hebergements-title {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.hebergements-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.hebergements-card .card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+    width: 300px; /* Largeur ajustée */
+    height: 230px; /* Hauteur ajustée */
+    box-sizing: border-box;
+}
+
+.hebergements-card .card:hover {
+    transform: scale(1.05);
+}
+
+.hebergements-card .card img {
+    width: 100%;
+    height: 130px; /* Hauteur ajustée pour s'adapter à l'intérieur de la carte */
+    border-top-left-radius: 10px; /* Pour que l'image respecte les coins arrondis de la carte */
+    border-top-right-radius: 10px; /* Pour que l'image respecte les coins arrondis de la carte */
+}
+
+.hebergements-card .card-content {
+    padding: 10px;
+    flex-grow: 1; /* Permet au contenu de s'étendre */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alignement en haut */
+    gap: 2px; /* Espace réduit entre les éléments */
+}
+
+.hebergements-card .card-title {
+    margin: 5px 0;
+}
+
+.hebergements-card .card-subtitle {
+ margin: 5px 0;
+}
+.hebergements-card .card-rating {
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+}
+
 
 /****** Populaires ***********/
 .populaires {
