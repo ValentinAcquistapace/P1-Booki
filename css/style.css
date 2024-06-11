@@ -76,7 +76,7 @@ a {
     max-height: 20px;
 }
 
-#header-nav {
+#banniere-nav {
     position: fixed; 
     top: 0; 
     right: 0; 
@@ -87,17 +87,17 @@ a {
 }
 
 
-#header-nav ul {
+#banniere-nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-#header-nav li {
+#banniere-nav li {
     margin-left: 20px;
     position: relative;
 }
-#header-nav a {
+#banniere-nav a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
@@ -107,10 +107,10 @@ a {
     padding: 0;
 }
 
-#header-nav a:hover {
+#banniere-nav a:hover {
     color: blue;
 }
-#header-nav a::before {
+#banniere-nav a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -122,12 +122,34 @@ a {
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
 }
-#header-nav a:hover::before {
+#banniere-nav a:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
+/****** HEADER ******/
+
+header {
+    padding: 20px;
+}
+
+#grand-titre {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+header p {
+    margin: 0 0 20px 0;
+}
+
 /****** Recherche d'hébergement ********/
+
+.search {
+    text-align: left;
+    margin : 30px 0;
+}
 
 .search-container {
     display: flex;
@@ -137,6 +159,8 @@ a {
     overflow: hidden;
     width: fit-content;
     background-color: white;
+    margin: 30px 0;
+    
 }
 .search-container .location-icon {
     background-color: #f2f2f2;
@@ -192,15 +216,84 @@ a {
     background-color: #0056b3;
 }
 
-#grand-titre {
-    font-family: 'Raleway', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    margin-top: 40px ;
-    margin-bottom: 5px;
+
+/****** Filtres ******/
+
+.Filters-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
 }
 
+.Filters-container h2 {
+    font-size: 1.2em; /* Taille du texte pour le titre */
+    color: black; /* Couleur du texte pour le titre */
+    margin: 0; /* Supprimer la marge autour du titre */
+}
 
+.Filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 1em;
+}
+
+.filter-item i {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 1em
+}
+
+.filter-item span {
+    font-weight: bold;
+}
+
+.filter-item.active {
+    border-color: #ccc;
+}
+
+.filter-item.highlight {
+    border-color: #ccc;
+}
+
+.filter-item:hover {
+    background-color: #e7f1ff; /* Fond bleu au survol */
+    color: initial; /* Texte blanc pour contraste */
+}
+
+.filter-item:hover i {
+    color: #007bff; /* Icônes blanches pour contraste */
+}
+
+/***** info recherche *****/
+
+.info-container {
+    display: flex;
+    align-items: center; 
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    color: #333;
+}
+
+.info-icon {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-right: 10px; 
+}
+
+.info-text {
+    font-size: 1em;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
