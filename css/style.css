@@ -60,6 +60,12 @@ a {
     color: var(--main-bg-color)
 }
 
+.afficher-plus {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
 /****** Banniere ********/
 .banniere {
     display: flex;
@@ -313,6 +319,7 @@ header p {
     box-sizing: border-box;
 }
 
+
 /****** Hebergements ***********/
 
 .hebergements {
@@ -320,10 +327,17 @@ header p {
     justify-content: space-between;
     margin: 20px;
     padding: 20px;
+    width: 65%;
+    
 }
 
 .hebergements-container {
     width: 100%;
+}
+
+.hebergements-container button {
+    border: none;
+    justify-content: center;
 }
 
 .hebergements-title {
@@ -342,12 +356,12 @@ header p {
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s;
-    width: 300px; /* Largeur ajustée */
+    min-width: 300px; /* largeur imposé minimum de 300px */
     height: 230px; /* Hauteur ajustée */
     box-sizing: border-box;
 }
@@ -365,7 +379,6 @@ header p {
 
 .hebergements-card .card-content {
     padding: 10px;
-    flex-grow: 1; /* Permet au contenu de s'étendre */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Alignement en haut */
@@ -380,15 +393,24 @@ header p {
  margin: 5px 0;
 }
 .hebergements-card .card-rating {
-    display: flex;
-    align-items: center;
-    margin: 2px 0;
+    margin-bottom: 5px;
+    
 }
 
+.afficher-plus {
+    margin-top: 18px;
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block; /* Affichage en ligne */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur en forme de main */
+    border-radius: 4px; /* Coins arrondis */
+}
 
 /****** Populaires ***********/
 .populaires {
-    width: 100%;
+    width: 35%;
+    margin: 20px;
+    padding: 20px;
 }
 
 .populaires-title {
@@ -403,7 +425,7 @@ header p {
 }
 
 .populaires-cards img {
-    width: 100%;
+    min-width: 30%; /* largeur imposé minimum de 50% */
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -431,6 +453,48 @@ header p {
     margin-bottom: 5px;
 }
 
+/*******footer*******/
+
+footer {
+    background-color: #f2f2f2; /* Couleur de fond gris clair */
+    padding: 20px; /* Espace interne */
+    display: flex;
+    justify-content: space-between; /* Distribution égale des colonnes */
+    align-items: flex-start; /* Alignement en haut */
+}
+
+.footer-title {
+    font-size: 16px; /* Taille de la police des titres */
+    font-weight: bold; /* Titre en gras */
+    margin-bottom: 10px; /* Espace en dessous des titres */
+}
+
+footer div {
+    flex: 1; /* Les divs prennent une largeur égale */
+    margin-right: 20px; /* Espace entre les colonnes */
+}
+
+footer div:last-child {
+    margin-right: 0; /* Pas d'espace après la dernière colonne */
+}
+
+ul {
+    list-style-type: none; /* Pas de puces */
+    padding: 0; /* Pas de marge interne */
+}
+
+li {
+    margin-bottom: 10px; /* Espace entre les éléments de la liste */
+}
+
+a {
+    text-decoration: none; /* Pas de soulignement */
+    color: #333; /* Couleur du texte */
+}
+
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
 
 
 
