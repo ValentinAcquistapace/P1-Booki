@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    
 }
 
 :root {
@@ -72,7 +73,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0%;
-    margin: 0%;
+    margin-left: 20px;
     background-color: #fff;
     width: 100%;
     
@@ -96,6 +97,7 @@ a {
 #banniere-nav ul {
     display: flex;
     list-style-type: none;
+    margin-right: 20px;
     margin: 0;
     padding: 0;
 }
@@ -137,6 +139,7 @@ a {
 
 header {
     padding: 20px;
+    
 }
 
 #grand-titre {
@@ -207,19 +210,19 @@ header p {
 .search-container button {
     background-color: #007bff;
     color: white;
-    border: none;
     padding: 10px 15px ;
+    border: none;
     cursor: pointer;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-align: center;
+    
 }
 
 .search-container button:hover {
     background-color: #0056b3;
+    height: 100%;
 }
 
 
@@ -326,13 +329,10 @@ header p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 20px;
     padding: 20px;
-    width: auto;
+    width: 65%;
     
 }
-
-
 
 .hebergements-container button {
     border: none;
@@ -360,8 +360,8 @@ header p {
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s;
-    min-width: 300px; /* largeur imposé minimum de 300px */
-    height: 230px; /* Hauteur ajustée */
+    width: 100%; /* largeur imposé minimum de 300px */
+    height: 95%; /* Hauteur ajustée */
     box-sizing: border-box;
 }
 
@@ -389,10 +389,10 @@ header p {
 }
 
 .hebergements-card .card-subtitle {
- margin: 5px 0;
+    margin: 5px 0;
 }
 .hebergements-card .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 2%;
     
 }
 
@@ -407,7 +407,7 @@ header p {
 
 /****** Populaires ***********/
 .populaires {
-    width: auto;
+    width: 32%;
     margin: 20px;
     padding: 20px;
 }
@@ -559,6 +559,7 @@ a:hover {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
