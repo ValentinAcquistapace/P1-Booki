@@ -2,6 +2,7 @@
 * {
     font-family: 'Raleway', sans-serif;
     
+    
 }
 
 :root {
@@ -17,6 +18,9 @@
 body {
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .main-container {
@@ -24,7 +28,6 @@ body {
     /*max-width: 1440px;*/ 
     padding: 0%;
     margin: 0%;
-    margin-top: 15px;
     box-sizing: border-box;
 }
 
@@ -84,35 +87,36 @@ a {
 }
 
 #banniere-nav {
-    position: fixed; 
+    position: relative; 
     top: 0; 
     right: 0; 
     background-color: #fff; 
     z-index: 1000; 
-    padding: 10px; 
+    margin-right: 20px;
 
 }
-
 
 #banniere-nav ul {
     display: flex;
     list-style-type: none;
-    margin-right: 20px;
     margin: 0;
     padding: 0;
+    
 }
+
 #banniere-nav li {
     margin-left: 20px;
     position: relative;
 }
 #banniere-nav a {
+    display: inline-block;
     text-decoration: none;
     color: #000;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     position: relative;
-    padding: 0;
+    padding: 15px;
 }
 
 #banniere-nav a:hover {
@@ -124,7 +128,7 @@ a {
     width: 100%;
     height: 3px;
     background-color: blue;
-    top: -5px;
+    top: 0;
     left: 0;
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -157,14 +161,16 @@ header p {
 
 .search {
     text-align: left;
-    margin : 30px 0;
+    margin : 15px;
 }
 
 .search-container {
     display: flex;
     align-items: center;
     border: 1px solid #ddd;
-    border-radius: 25px;
+    border-radius: 15px;
+    width: 377px;
+    height: 49px;
     overflow: hidden;
     width: fit-content;
     background-color: white;
@@ -173,7 +179,7 @@ header p {
 }
 .search-container .location-icon {
     background-color: #f2f2f2;
-    padding: 10px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,6 +193,7 @@ header p {
 }
 .fa-location-dot {
     color: black;
+    padding: auto auto;
 }
 
 .search-container input[type="text"] {
@@ -217,6 +224,7 @@ header p {
     font-size: 16px;
     font-weight: 700;
     text-align: center;
+    height: 100%;
     
 }
 
@@ -330,7 +338,9 @@ header p {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    margin: 20px;
     width: 65%;
+
     
 }
 
@@ -397,7 +407,7 @@ header p {
 }
 
 .afficher-plus {
-    margin-top: 18px;
+    margin-top: 15px;
     text-decoration: none; /* Pas de soulignement */
     display: inline-block; /* Affichage en ligne */
     font-size: 16px; /* Taille de la police */
@@ -464,16 +474,19 @@ header p {
 
 }
 .activités-card {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly; /* Aligne les cartes au début */
-    gap: 2px; /* Ajustez cette valeur selon vos besoins */
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around; /* Change pour répartir l'espace autour des cartes */
+    gap: 2%;
+    width: 95%;
+    align-items: center;
+    padding: 5px;
+    
 }
 
 .activités-card .card {
     flex-grow: 1;
-    width: 300px; /* Ajustez cette valeur selon vos besoins */
+    width: 260px; /* Ajustez cette valeur selon vos besoins */
     height: 400px; /* Ajustez cette valeur selon vos besoins */
     box-sizing: border-box;
     padding: 0;
@@ -485,7 +498,6 @@ header p {
     width: 100%;
     height: 85%;
     object-fit: cover;
-    display: block;
     border-radius: 10px 10px 0 0;
     margin: 0; /* Supprime toute marge autour de l'image */
     padding: 0; /* Supprime tout padding autour de l'image */
@@ -568,17 +580,22 @@ a:hover {
 
     .hebergements {
         width: 100%;
+        margin-top: 50px;
+        margin-left: 0px;
     }
 
     .populaires {
         width: 100%;
         margin-top: 50px;
+        margin-left: 0px;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 10px;
+
     }
 
     .populaires-cards a {
@@ -592,9 +609,38 @@ a:hover {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activités-card {
+        width: 100%;
+    }
+   .activités-card .card {
+    width: 100%;
+   }
+    
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .hebergements-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .activités-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+/* NOUVEAU */
+    
+
+
+
 }
