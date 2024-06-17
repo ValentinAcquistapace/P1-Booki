@@ -36,6 +36,11 @@ a {
     text-decoration: none;
 }
 
+.deco-text {
+    text-decoration: none;
+    color: inherit;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -335,6 +340,9 @@ header p {
     box-sizing: border-box;
 }
 
+.hebergements-and-populaires a {
+    text-decoration: none;
+}
 
 /****** Hebergements ***********/
 
@@ -345,7 +353,7 @@ header p {
     padding: 20px;
     margin: 20px;
     width: 65%;
-
+    text-decoration: none;
     
 }
 
@@ -357,6 +365,7 @@ header p {
 .hebergements-title {
     margin-bottom: 20px;
     width: 100%;
+    
 }
 
 .hebergements-card {
@@ -374,14 +383,9 @@ header p {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     text-decoration: none;
     color: inherit;
-    transition: transform 0.3s;
     width: 100%; /* largeur imposé minimum de 300px */
     height: 95%; /* Hauteur ajustée */
     box-sizing: border-box;
-}
-
-.hebergements-card .card:hover {
-    transform: scale(1.05);
 }
 
 .hebergements-card .card img {
@@ -398,6 +402,11 @@ header p {
     justify-content: flex-start; /* Alignement en haut */
     gap: 2px; /* Espace réduit entre les éléments */
 }
+
+.hebergements-card .card-text {
+    text-decoration: none;
+}
+
 
 .hebergements-card .card-title {
     margin: 5px 0;
