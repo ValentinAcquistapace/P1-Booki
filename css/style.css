@@ -87,16 +87,13 @@ a {
 }
 
 #banniere-nav {
-    position: relative; 
     top: 0; 
     right: 0; 
     background-color: #fff; 
-    z-index: 1000; 
     margin-right: 20px;
-
 }
 
-#banniere-nav ul {
+ #banniere-nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -106,8 +103,9 @@ a {
 
 #banniere-nav li {
     margin-left: 20px;
-    position: relative;
-}
+    
+} 
+
 #banniere-nav a {
     display: inline-block;
     text-decoration: none;
@@ -134,10 +132,11 @@ a {
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
 }
+
 #banniere-nav a:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
+} 
 
 /****** HEADER ******/
 
@@ -233,7 +232,13 @@ header p {
     height: 100%;
 }
 
+.button-grand {
+    display: block;
+}
 
+.button-petit {
+    display: none;
+}
 /****** Filtres ******/
 
 .Filters-container {
@@ -638,9 +643,48 @@ a:hover {
         flex-direction: column;
     }
 
-/* NOUVEAU */
+    .banniere {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+    }
     
+    #banniere-nav {
+        width:100% ;
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        text-align: center;
+    }
 
+    #banniere-nav a {
+        border-bottom: 3px solid #f2f2f2;
+        margin: 0px auto;
+        /* padding: 15px auto; */
+        width: 100%;
 
+    }
 
+    #banniere-nav a:hover {
+        border-bottom: 4px solid #0065FC;
+    }
+    
+    #banniere-nav a:hover::before {
+        display: none;
+    }
+
+    .button-grand {
+        display: none;
+    }
+    
+    .button-petit {
+        display: block;
+    }
+
+/* NOUVEAU */
 }
+
+
+
+
+
