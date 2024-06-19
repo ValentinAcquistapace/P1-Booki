@@ -45,7 +45,7 @@ a {
 }
 
 .section-title {
-    margin: 0;
+    margin: 0px;
     font-size: 22px;
 }
 
@@ -736,24 +736,33 @@ a:hover {
     }
 
     .populaires {
-        margin-top: 2px;
-        align-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
 
     }
+
     .populaires-title {
         margin-bottom: 10px;
     }
 
     .populaires-cards {
+        width: 100%;
         flex-direction: column;
     }
 
     .populaires-cards .card {
-        max-width: 335px;
+        width: 335px;
         max-height: 146px;
         margin-top: 5px;
     }
 
+    .hebergements {
+        align-items: center;
+        background-color: transparent;
+        text-align: left;
+    }
 
     .hebergements-card .card {
         width: 335px;
@@ -762,19 +771,16 @@ a:hover {
 
     .hebergements-card .card img {
         height: 60%;
+        
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
     .hebergements-card {
-        justify-content: space-between;
         gap: 15px;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .hebergements {
-        align-items: center;
-        background-color: transparent;
-    }
-    
     .afficher-plus {
         background-color: transparent;
         margin-top: 5px;
@@ -788,19 +794,16 @@ a:hover {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        text-align: left;
     }
 
     .activités-title {
         width: 100%;
-        margin-right: 0;
-        text-align: left;
-        padding: 0px;
-
+        margin-bottom: 20px;
     }
     .activités-card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         gap: 15px;
         width: 100%;
         padding: 0px;
@@ -810,14 +813,24 @@ a:hover {
     .activités-card .card {
         width: 315px;
         height: 200px;
-        margin: 0;
+        margin: 0px;
     }
 
+    .activités-card .card-text {
+        margin-left: 10px;
+        height: 20%;
+        padding: 0px;
+    }
     .activités-card .card img {
         height: 75%;
     }
     
 }
+
+
+
+
+
 
 
 
