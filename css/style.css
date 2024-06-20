@@ -151,8 +151,8 @@ a {
 
 header {
     padding: 10px;
-    margin-left: 20px;
-    
+    margin-left: 5px;
+    margin-top: 15px;    
 }
 
 #grand-titre {
@@ -171,7 +171,7 @@ header p {
 
 .search {
     text-align: left;
-    margin : 15px;
+    margin : 0px;
 }
 
 .search-container {
@@ -391,6 +391,10 @@ header p {
     box-sizing: border-box;
 }
 
+.hebergements-card .card a {
+    text-decoration: none;
+}
+
 .hebergements-card .card img {
     width: 100%;
     height: 130px; /* Hauteur ajustée pour s'adapter à l'intérieur de la carte */
@@ -451,6 +455,11 @@ header p {
     margin-top: 33px;
 }
 
+.populaires-cards .card a {
+    text-decoration: none;
+}
+
+
 .populaires-cards img {
     min-width: 40%; 
     height: 136px;
@@ -494,11 +503,11 @@ header p {
 .activités-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: space-around; /* Change pour répartir l'espace autour des cartes */
-    gap: 2%;
+    justify-content: space-between; /* Change pour répartir l'espace autour des cartes */
+    gap: 2px;
     width: 100%;
     align-items: center;
-    padding: 5px;
+    padding: 30px;
     
 }
 
@@ -506,7 +515,7 @@ header p {
     flex-grow: 1;
     width: 260px; /* Ajustez cette valeur selon vos besoins */
     height: 400px; /* Ajustez cette valeur selon vos besoins */
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding: 0;
     border-radius: 10px; /* Pour avoir des coins arrondis */
 }
