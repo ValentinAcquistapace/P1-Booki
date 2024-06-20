@@ -437,6 +437,10 @@ header p {
 }
 
 /****** Populaires ***********/
+.populaires-cards a:hover {
+    text-decoration: none;
+}
+
 .populaires {
     background-color: var(--main-bg-color);
     width: 32%;
@@ -495,11 +499,15 @@ header p {
     margin-bottom: 80px;
 }
 
+.activités a:hover {
+    text-decoration: none;
+}
+
 .activités-card .card-title {
     width: 100%;
     font-weight: bold;
-
 }
+
 .activités-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -816,9 +824,8 @@ a:hover {
         gap: 15px;
         width: 100%;
         padding: 0px;
-        
-
     }
+
     .activités-card .card {
         width: 315px;
         height: 200px;
@@ -835,13 +842,3 @@ a:hover {
     }
     
 }
-
-
-
-
-
-
-
-
-
-
